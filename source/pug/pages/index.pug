@@ -1,7 +1,7 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Marta M - Дизайн и проектирование света" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -13,6 +13,15 @@ block main
   main
     //- на странице запрещен "голый" код
     //- все блоки вставляются из папки pug/components/blocks
-    +intro()
+    //- +intro()
+    .container
+        .intro
+          .logo
+            picture
+              source(type="image/webp" srcset="img/content/logo.webp, img/content/logo@2x.webp 2x")
+              img(src="img/content/logo.jpg" srcset="img/content/logo@2x.jpg 2x" alt="логотип Marta M" width="331" height="295")
+          .intro__links
+            a.intro__link(href="https://meneshka.wixsite.com/marta-m/portfolio") ligth
+            a.intro__link(href="https://meneshka.wixsite.com/marta-m/%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-1") design
 
-block modals
+//-block modals

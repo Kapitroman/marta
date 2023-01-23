@@ -1,6 +1,6 @@
 doctype html
 
-include ../components
+//-include ../components
 
 block variables
 
@@ -10,7 +10,7 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="Marta M — описание")
+    meta(name="description", content="Marta M — проектировщик и дизайнер по свету")
     //- генерируйте favicon тут - https://realfavicongenerator.net/
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
     //- используйте только для шрифта находящегося на первом экране
@@ -33,7 +33,7 @@ html(lang="ru")
 
     link(rel="stylesheet", href="css/style.min.css")
 
-  body
+  //-body
     +sprite()
     .wrapper(class=wrapperMods)
       if (hasHeader)
@@ -48,3 +48,9 @@ html(lang="ru")
 
     script(src="js/vendor.min.js")
     script(src="js/main.min.js")
+
+  body
+
+    block main
+
+
