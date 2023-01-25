@@ -6,6 +6,7 @@
     "IE 11",
     "Firefox ESR"
   ],
+  "homepage": "https://kapitroman.github.io/marta/",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
